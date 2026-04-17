@@ -221,6 +221,93 @@ body {
 }
 
 
+/* Experience Section */
+.experience-section {
+  padding: 5rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: black;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-card {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: left;
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.experience-card h3 {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.experience-card span {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.experience-card h4 {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.experience-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.experience-card li {
+  color: var(--secondary-color);
+  font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.experience-card li::before {
+  content: "•";
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+
 /* Skills Section */
 .skills {
   padding: 5rem 2rem;
