@@ -258,11 +258,15 @@ function App() {
               <span className="status-dot"></span> Available for Front-End Developer Positions
             </div>
             <h1 className="hero-name">Sirinan Hongdamnean</h1>
-            <h2 className="hero-title">Front-End Developer</h2>
+            <h2 className="hero-title">Software Engineer | Front-End Developer | Web Developer | Programmer</h2>
             <p className="hero-bio">
-              Recent <strong>Software Engineering graduate</strong> with a strong passion for Front-End development and creating modern, responsive, and user-friendly web applications. Skilled in developing websites and applications using front-end technologies, with a strong understanding of UI/UX design principles and a focus on creating engaging digital experiences. <br /><br />
-              Experienced in working collaboratively within a team and applying design principles to develop intuitive and accessible user interfaces. Passionate about learning new technologies and continuously improving development skills to create efficient, responsive, and visually appealing web experiences. <br /><br />
-              Committed to growing into a professional Front-End Developer who can combine technical knowledge with creative problem-solving to build high-quality, user-centered web applications that provide meaningful and enjoyable experiences.
+              Recent <strong>Software Engineering graduate</strong> with hands-on experience in <strong>Front-End and Web Development</strong> through university projects, personal projects, and internship experience. Interested in building modern, responsive, and user-friendly web applications with a focus on usability, performance, and clean implementation.<br />
+              <br />
+              Skilled in <strong>JavaScript, TypeScript, React.js, HTML, CSS, and Tailwind CSS</strong>, with experience developing web applications, integrating RESTful APIs, handling application data, and using Git for version control. Also have a basic understanding of <strong>Back-End development, databases, and software development processes</strong>, supporting effective collaboration with development teams.<br />
+              <br />
+              Experienced in working collaboratively in a professional environment, solving technical problems, debugging applications, and adapting to new technologies. Have a good understanding of <strong>UI/UX principles</strong> and enjoy turning requirements and designs into intuitive and accessible user interfaces.<br />
+              <br />
+              A responsible, fast-learning, and motivated developer who is committed to continuously improving technical and problem-solving skills. Seeking an opportunity as a <strong>Front-End Developer, Web Developer, Programmer, or Software Engineer</strong> to contribute to real-world projects, apply my technical knowledge, and grow as a professional software developer.
             </p>
 
             {/* Quick Metrics */}
