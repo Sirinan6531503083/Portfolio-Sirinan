@@ -249,16 +249,15 @@ function App() {
               </div>
             </div>
             <div className="experience-badge">
-              <FaCheckCircle /> Ready for Front-End Roles
+              <FaCheckCircle /> Ready to start immediately
             </div>
           </div>
 
           <div className="about-text">
-            <div className="status-pill">
-              <span className="status-dot"></span> Available for Front-End Developer Positions
-            </div>
+
+
             <h1 className="hero-name">Sirinan Hongdamnean</h1>
-            <h2 className="hero-title">Software Engineer | Front-End Developer | Web Developer | Programmer</h2>
+            <h2 className="hero-title">Software Engineer | Front-End Developer | Web Developer | Programmer | UI/UX Design</h2>
             <p className="hero-bio">
               Recent <strong>Software Engineering graduate</strong> with hands-on experience in <strong>Front-End and Web Development</strong> through university projects, personal projects, and internship experience. Interested in building modern, responsive, and user-friendly web applications with a focus on usability, performance, and clean implementation.<br />
               <br />
@@ -266,7 +265,7 @@ function App() {
               <br />
               Experienced in working collaboratively in a professional environment, solving technical problems, debugging applications, and adapting to new technologies. Have a good understanding of <strong>UI/UX principles</strong> and enjoy turning requirements and designs into intuitive and accessible user interfaces.<br />
               <br />
-              A responsible, fast-learning, and motivated developer who is committed to continuously improving technical and problem-solving skills. Seeking an opportunity as a <strong>Front-End Developer, Web Developer, Programmer, or Software Engineer</strong> to contribute to real-world projects, apply my technical knowledge, and grow as a professional software developer.
+              A responsible, fast-learning, and motivated developer who is committed to continuously improving technical and problem-solving skills. Seeking an opportunity as a <strong>Front-End Developer, UI/UX Design, Web Developer, Programmer, or Software Engineer</strong> to contribute to real-world projects, apply my technical knowledge, and grow as a professional software developer.
             </p>
 
             {/* Quick Metrics */}
@@ -431,7 +430,7 @@ function App() {
             </div>
             <h3>MFU INTERNSHIP SKILLS CERTIFICATE</h3>
             <p className="certificate-subtitle">Mae Fah Luang University Internship Skill Certificate</p>
-            
+
             <div className="certificate-placeholder" onClick={() => openModal("/mfu_certificate.jpg")}>
               <img
                 src="/mfu_certificate.jpg"

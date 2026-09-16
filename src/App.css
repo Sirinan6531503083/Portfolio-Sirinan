@@ -266,7 +266,7 @@ body {
   display: grid;
   grid-template-columns: 360px 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
   background: var(--card-bg);
   padding: 3.5rem 3rem;
   border-radius: var(--border-radius-lg);
@@ -293,6 +293,7 @@ body {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  margin-top: 3.5rem;
 }
 
 .profile-glow {
