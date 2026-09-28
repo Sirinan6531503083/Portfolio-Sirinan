@@ -697,6 +697,39 @@ body {
   border-radius: 50px;
 }
 
+/* Internship Pain Point Callout */
+.exp-pain-point {
+  background: linear-gradient(135deg, rgba(255, 59, 129, 0.08) 0%, rgba(121, 40, 202, 0.08) 100%);
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem 1.25rem;
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  margin-bottom: 1.5rem;
+}
+
+.pain-point-label {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 0.88rem;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pain-point-icon {
+  font-size: 1rem;
+}
+
+.exp-pain-point p {
+  color: var(--text-main);
+  font-size: 0.96rem;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
 .exp-bullet-list {
   list-style: none;
   padding: 0;
@@ -705,7 +738,7 @@ body {
 .exp-bullet-list li {
   position: relative;
   padding-left: 1.5rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.85rem;
   color: var(--text-muted);
   font-size: 0.98rem;
   line-height: 1.65;
@@ -1039,7 +1072,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .tag-pill {
@@ -1049,6 +1082,68 @@ body {
   background-color: var(--primary-light);
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
+}
+
+/* Project Pain Point Box */
+.project-painpoint-box {
+  background: linear-gradient(135deg, rgba(255, 59, 129, 0.08) 0%, rgba(121, 40, 202, 0.08) 100%);
+  border-left: 3px solid var(--primary-color);
+  border-radius: 0 8px 8px 0;
+  padding: 0.75rem 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.painpoint-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 0.25rem;
+}
+
+.painpoint-icon {
+  font-size: 0.85rem;
+}
+
+.painpoint-desc {
+  color: var(--text-main);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Project Bullet List */
+.project-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  flex: 1;
+}
+
+.project-bullet-list li {
+  position: relative;
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.project-bullet-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .project-description {
@@ -1686,20 +1781,54 @@ body {
     padding: 0.2rem 0.5rem;
   }
 
+  .exp-pain-point {
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .pain-point-label {
+    font-size: 0.82rem;
+  }
+
+  .exp-pain-point p {
+    font-size: 0.88rem;
+  }
+
   .exp-bullet-list li {
-    font-size: 0.85rem;
+    font-size: 0.86rem;
+    line-height: 1.55;
+    padding-left: 1.3rem;
   }
 
   .project-card {
-    flex: 0 0 260px;
+    flex: 0 0 295px;
+  }
+
+  .project-card-content {
+    padding: 1.25rem 1.1rem;
   }
 
   .project-card-content h3 {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
   }
 
-  .project-description p {
-    font-size: 0.85rem;
+  .project-painpoint-box {
+    padding: 0.65rem 0.8rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .painpoint-tag {
+    font-size: 0.74rem;
+  }
+
+  .painpoint-desc {
+    font-size: 0.82rem;
+  }
+
+  .project-bullet-list li {
+    font-size: 0.84rem;
+    line-height: 1.5;
+    padding-left: 1.1rem;
   }
 
   .tag-pill {
@@ -2058,4 +2187,33 @@ body {
 
 .App.dark-theme .nav-links {
   background-color: #121928;
+}
+
+.App.dark-theme .exp-pain-point,
+.App.dark-theme .project-painpoint-box {
+  background: linear-gradient(135deg, rgba(255, 59, 129, 0.15) 0%, rgba(121, 40, 202, 0.15) 100%);
+  border-left-color: #ff69b4;
+}
+
+.App.dark-theme .exp-pain-point p,
+.App.dark-theme .painpoint-desc {
+  color: #f1f5f9;
+}
+
+.App.dark-theme .pain-point-label,
+.App.dark-theme .painpoint-tag {
+  color: #ff69b4;
+}
+
+.App.dark-theme .exp-bullet-list li,
+.App.dark-theme .project-bullet-list li {
+  color: #cbd5e1;
+}
+
+.App.dark-theme .exp-bullet-list li strong {
+  color: #ffffff;
+}
+
+.App.dark-theme .project-bullet-list li::before {
+  color: #ff69b4;
 }

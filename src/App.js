@@ -27,6 +27,7 @@ import {
   FaSun,
   FaMoon,
   FaCamera,
+  FaLightbulb,
 } from "react-icons/fa";
 import "./App.css";
 
@@ -74,17 +75,17 @@ function App() {
     {
       icon: <FaCode />,
       title: "Programming Languages",
-      items: ["TypeScript", "JavaScript", "HTML", "CSS", "Dart", "C#"],
+      items: ["JavaScript", "TypeScript", "HTML", "CSS", "Dart", "C#", "Python"],
     },
     {
       icon: <FaTools />,
       title: "Frameworks & Libraries",
-      items: ["React.js", "Flutter", "Vue.js", "Nuxt.js", "Node.js", "Tailwind CSS"],
+      items: ["React", "Vue.js", "Nuxt.js", "Flutter", "Node.js", "Tailwind CSS"],
     },
     {
       icon: <FaDatabase />,
       title: "Database",
-      items: ["Firebase", "MySQL"],
+      items: ["Firebase", "PostgreSQL", "Supabase", "MySQL"],
     },
     {
       icon: <FaDesktop />,
@@ -108,62 +109,91 @@ function App() {
       title: "Chiangrungpark – Hotel Booking Website",
       subtitle: "Web Application (2023)",
       category: "Web Application",
-      description: `Book a room and order food at the hotel.
-
-• Designed an attractive and user-friendly UX/UI for hotel booking and food ordering.
-• Developed front-end pages using HTML and CSS with well-structured layouts.
-• Communicated and collaborated with clients to gather requirements.
-• Focused on creating a smooth and seamless user experience.`,
+      badge: "Hotel & Resort",
+      painPoint: "Hotel guests and visitors needed an intuitive online platform to browse room details, make reservations, and order meals seamlessly.",
+      bullets: [
+        "Designed an attractive and user-friendly UX/UI for hotel booking and food ordering.",
+        "Developed front-end pages using HTML and CSS with well-structured layouts.",
+        "Communicated and collaborated with clients to gather requirements.",
+        "Focused on creating a smooth and seamless user experience.",
+      ],
       tags: ["HTML5", "CSS3", "JavaScript", "UX/UI Design"],
       image: "/chiang.jpg",
     },
     {
-      title: "Quiz for Study – Educational Mobile App",
-      subtitle: "Mobile Application (2023–2024)",
+      title: "Quiz for Study – Educational Mobile Application",
+      subtitle: "Mobile Application (2023 – 2024)",
       category: "Mobile Application",
-      badge: "Published on Play Store",
-      description: `An educational mobile application providing practice tests in 5 main subjects, randomly assigned for each test set, for students from grades 1 to 6.
-
-• Developed the front-end using Flutter (Dart and CSS).
-• Designed the complete UX/UI on Figma.
-• Ensured an interactive and user-friendly experience for primary students.`,
+      badge: "Published on Google Play Store",
+      painPoint: "Students needed a convenient platform for practicing and reviewing lessons with a variety of questions without having to manually select question sets.",
+      bullets: [
+        "Developed a Mobile Application for practicing quizzes across five core subjects for Grades 1–6.",
+        "Developed a randomized subject and question allocation system to generate diverse quiz sets.",
+        "Designed the system to support students in reviewing lessons and assessing their understanding.",
+      ],
       tags: ["Flutter", "Dart", "CSS", "Figma", "Google Play Store"],
       image: "/study.jpg",
     },
     {
-      title: "Multi-Agent AI Service for Students",
+      title: "MFU E-COMMERCE – Second-Hand Marketplace for MFU Students",
+      subtitle: "Web Application (2024)",
+      category: "E-Commerce Web App",
+      badge: "Marketplace Platform",
+      painPoint: "Students needed a convenient platform for buying, selling, and tracking transactions within the university.",
+      bullets: [
+        "Developed User and Admin systems with role-based access.",
+        "Implemented registration, login, product management, search, shopping cart, and order management.",
+        "Developed real-time delivery tracking using Socket.IO and an Admin Dashboard.",
+        "Integrated Google Translate API for real-time language translation.",
+      ],
+      tags: ["React.js", "Node.js", "Socket.IO", "Google Translate API", "REST APIs"],
+      image: "/ecommerc.jpg",
+    },
+    {
+      title: "Multi-Agent AI Service for Students – Web Application",
       subtitle: "Web Application (2025)",
       category: "AI & Web Application",
-      description: `A website featuring an AI Chatbot that answers questions and provides assistance to Mae Fah Luang University students 24/7.
-
-• Developed and integrated the AI Chatbot using Google Gemini API (LLM) with Python.
-• Front-end development using Vue.js (JavaScript).
-• Designed and implemented the complete UI/UX on Figma, focusing on a smooth and user-friendly experience.`,
-      tags: ["Vue.js", "Python", "Google Gemini API", "LLM", "Figma"],
+      badge: "Senior Project",
+      painPoint: "Students needed to search for university information across multiple sources, which was time-consuming and required additional effort to verify information accuracy.",
+      bullets: [
+        "Developed an AI Chatbot to provide 24/7 information and assistance related to Mae Fah Luang University.",
+        "Implemented Multi-Agent AI and RAG to retrieve information directly from university documents.",
+        "Integrated the Gemini 2.0 Flash API and Auto RAG to support information retrieval and answer summarization.",
+      ],
+      tags: ["Vue.js", "Python", "Gemini 2.0 Flash API", "Multi-Agent AI", "Auto RAG"],
       image: "/mfu.jpg",
     },
     {
-      title: "Village Savings Management System",
-      subtitle: "Web Application (In Development)",
+      title: "Village Savings Management System – Web Application",
+      subtitle: "Web Application (2026)",
       category: "Full-Stack Web App",
-      badge: "In Development",
-      description: `Digitizing village savings records for community administrators.
-
-• Developed a full-stack web application using React and Supabase (PostgreSQL), replacing manual notebook-based savings records.
-• Implemented automated balance calculation, role-based access control (RLS), and audit logging to prevent data loss and errors.`,
-      tags: ["React.js", "Supabase", "PostgreSQL", "RLS Security", "Tailwind CSS"],
+      badge: "Financial Management",
+      painPoint: "Manual savings records could cause data entry/calculation errors and data loss.",
+      bullets: [
+        "Developed a web application for member and savings management.",
+        "Implemented automated calculations and Audit Logging for tracking data changes.",
+        "Implemented RBAC and RLS for data access control.",
+        "Developed with React and Supabase (PostgreSQL).",
+      ],
+      tags: ["React.js", "Supabase", "PostgreSQL", "RLS Security", "RBAC"],
       image: "/village.jpg",
     },
     {
-      title: "ParkPass – Digital Stamp Collection Website",
+      title: "ParkPass – Digital Stamp Collection Web Application",
       subtitle: "Web Application (2025)",
       category: "Web Application",
-      description: `Developed a web application for collecting digital stamps of national parks, allowing users to track and view their collected stamps.
-
-• Front-end development using React.js (JSX and CSS).
-• Implemented user registration and login system (Authentication) with Firebase.
-• Designed and implemented the complete UI/UX for the website.`,
-      tags: ["React.js", "Firebase Auth", "JSX", "CSS3", "UX/UI Design"],
+      badge: "National Parks",
+      painPoint: "Physical stamp books are inconvenient to carry, easy to forget, and vulnerable to damage or loss. A digital stamp collection provides a more convenient and accessible alternative.",
+      bullets: [
+        "Developed a Web Application for collecting and viewing digital stamps from national parks.",
+        "Developed the Front-End using React.js (JSX and CSS).",
+        "Implemented User Registration and Login (Authentication) using Firebase.",
+        "Developed a QR Code Check-in feature to verify visits to each national park.",
+        "Implemented a staff verification system for validating visits and awarding Digital Stamps for each park.",
+        "Developed park-specific missions, such as hiking to summit viewpoints, to encourage user participation.",
+        "Implemented features to collect and track Digital Stamps and mission progress.",
+      ],
+      tags: ["React.js", "Firebase Auth", "QR Code Check-in", "CSS3", "UX/UI Design"],
       image: "/parkpass.jpg",
     },
   ];
@@ -275,7 +305,7 @@ function App() {
                 <span className="metric-label">GPAX (Software Eng)</span>
               </div>
               <div className="metric-box">
-                <span className="metric-number">5+</span>
+                <span className="metric-number">6+</span>
                 <span className="metric-label">Featured Projects</span>
               </div>
               <div className="metric-box">
@@ -365,13 +395,22 @@ function App() {
               <span>Unit Testing</span>
             </div>
 
+            <div className="exp-pain-point">
+              <div className="pain-point-label">
+                <FaLightbulb className="pain-point-icon" /> <span>Pain Point</span>
+              </div>
+              <p>The client required real-time visibility into solar power generation data while reducing manual effort in report preparation and data management.</p>
+            </div>
+
             <ul className="exp-bullet-list">
-              <li>Developed and maintained the EEP Report Management System and an internal factory monitoring dashboard serving 45 factory sites, covering UI design, frontend development, REST API integration, unit testing, and automated Excel export for daily reporting</li>
-              <li>Built an interactive solar monitoring diagram with hover-based real-time data visualization for each string</li>
-              <li>Developed the Alert & Alarm, System Management (dynamic input rows for target cost configuration), and User Management (role-based read/write access control) interfaces, integrated with REST APIs</li>
-              <li>Converted AutoCAD (DWG) drawings into SVG format for integration into web dashboards</li>
-              <li>Developed and enhanced backend microservices, including maintaining historical records and integrating frontend with backend services</li>
-              <li>Collaborated with internal teams, third-party vendors, and clients in cross-functional meetings to gather requirements, align on technical specifications, and support solution planning</li>
+              <li>Contributed to Production Monitoring and Report Management modules for the TBE project, supporting 45 sites.</li>
+              <li><strong>Production Monitoring:</strong> Developed interfaces displaying real-time solar power generation data to monitor system status and production performance.</li>
+              <li><strong>Report Management:</strong> Developed features for report data entry and editing, with Excel export to reduce manual report preparation.</li>
+              <li>Developed and maintained Front-End and UI designs, integrated REST APIs for Front-End–Backend communication, and performed Unit Testing and Automated Excel Export.</li>
+              <li>Developed an Interactive Solar Monitoring Diagram with hover interactions on individual strings to display real-time production data.</li>
+              <li>Converted AutoCAD (DWG) files to SVG for Web Dashboard visualization.</li>
+              <li>Enhanced Backend Microservices to support historical data storage and retrieval.</li>
+              <li>Collaborated with internal teams, vendors, and clients to gather requirements and define development approaches.</li>
             </ul>
 
             {/* T.C.C. Internship Activity Photos (4 Photos) */}
@@ -505,11 +544,22 @@ function App() {
                   ))}
                 </div>
 
-                <div className="project-description">
-                  {proj.description.split("\n").map((line, idx) => (
-                    <p key={idx}>{line}</p>
-                  ))}
-                </div>
+                {proj.painPoint && (
+                  <div className="project-painpoint-box">
+                    <div className="painpoint-tag">
+                      <FaLightbulb className="painpoint-icon" /> <span>Pain Point</span>
+                    </div>
+                    <p className="painpoint-desc">{proj.painPoint}</p>
+                  </div>
+                )}
+
+                {proj.bullets && proj.bullets.length > 0 && (
+                  <ul className="project-bullet-list">
+                    {proj.bullets.map((bullet, idx) => (
+                      <li key={idx}>{bullet}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           ))}
